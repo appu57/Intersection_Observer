@@ -19,7 +19,7 @@ We can improve web loading performance by using Intersection Observer. Suppose w
 
 
 
-
+<h2> Intersection Observer to load images </h2>
 !DOCTYPE html
 html lang="en"
 head
