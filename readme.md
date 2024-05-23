@@ -7,7 +7,7 @@ Sometimes in a website , we see bundle size is huge . We can reduce the size of 
 We can reduce bundle size by splitting the javascript code to smaller blocks , remove unused imports , optimise assets folder which has HD or unoptimised image .
 Or by importing bundles only when required 
 
-document.querySelectorAll('#myForm input').addEventListener('blur', async () => {
+document.querySelectorAll('#myForm input').addEventListener('blur', async () = {
 
   const { validateForm } = await import('/validate-form.mjs'); //importing only when required
  
@@ -20,19 +20,19 @@ We can improve web loading performance by using Intersection Observer. Suppose w
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lazy Load Example</title>
-</head>
-<body>
-    <h1>Lazy Load Example</h1>
-    <!-- Placeholder image that will be lazy-loaded -->
-    <img src="placeholder.jpg" data-src="actual-image.jpg" alt="Image" class="lazyload">
+!DOCTYPE html
+html lang="en"
+head
+    meta charset="UTF-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    titleLazy Load Example/title
+/head
+body
+    h1Lazy Load Example/h1
+    !-- Placeholder image that will be lazy-loaded --
+    img src="placeholder.jpg" data-src="actual-image.jpg" alt="Image" class="lazyload"
     
-    <script>
+    script
         // Run this code when the DOM is fully loaded
         document.addEventListener("DOMContentLoaded", function() {
             // Get all images with the class 'lazyload'
@@ -64,6 +64,6 @@ We can improve web loading performance by using Intersection Observer. Suppose w
                 });
             }
         });
-    </script>
-</body>
-</html>
+    /script
+/body
+/html
